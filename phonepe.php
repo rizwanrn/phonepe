@@ -36,7 +36,7 @@ $curl = curl_init();
       "Accept: application/json",
       "Content-Type: application/json",
       "X-VERIFY: ".$sha."###1",
-      "X-CALLBACK-URL: https://clothingnonshop.com/phonepe-thankyou.php"
+      "X-CALLBACK-URL: https://your-domain.com/phonepe-thankyou.php"
     ],
   ]);
   // https://mercury-uat.phonepe.com/v4/debit
