@@ -23,6 +23,7 @@ $curl = curl_init();
   $sha = $data."/pg/v1/pay"."099eb0cd-02cf-4e2a-8aca-3e6c6aff0399";
   $sha = hash('sha256', $sha); //conerting the data to SHA
   $postdata = json_encode(["request"=>$data]);
+  // change the CURLOPT_URL with this for PROD MODE https://api.phonepe.com/apis/hermes/pg/v1/pay
   curl_setopt_array($curl, [
     CURLOPT_URL => "https://api-preprod.phonepe.com/apis/hermes/pg/v1/pay",
     CURLOPT_RETURNTRANSFER => true,
